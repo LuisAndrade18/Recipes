@@ -1,9 +1,12 @@
 import React from 'react'
-import * as S from './Style'
+import About from './components/about/About'
+//import * as S from './Style'
 
 const Main = () => {
   return (
-    <div>Main</div>
+    <div>
+      <About/>
+    </div>
   )
 }
 
