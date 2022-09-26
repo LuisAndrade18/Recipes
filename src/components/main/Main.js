@@ -3,7 +3,7 @@ import LatestRecipes from "./components/latestRecipes/LatestRecipes";
 import About from './components/about/About'
 import * as S from "./Style.js";
 
-export default function Main() {
+const Main = () => {
   return (
     <S.Main>
       <LatestRecipes />
@@ -11,3 +11,5 @@ export default function Main() {
     </S.Main>
   );
 }
+
+export default Main

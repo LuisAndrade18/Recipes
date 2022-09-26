@@ -2,7 +2,7 @@ import React from "react";
 import MenuIcon from "../../assets/icons/menuIcon.svg";
 import * as S from "./Style.js";
 
-export default function Header() {
+const Header = () => {
   return (
     <S.Header>
       <nav>
@@ -25,3 +25,5 @@ export default function Header() {
     </S.Header>
   );
 }
+
+export default Header
