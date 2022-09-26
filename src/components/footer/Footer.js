@@ -1,9 +1,17 @@
 import React from 'react';
+import Subs from './components/Subs';
+import Nav from './components/Nav';
+import Copyright from './components/Copyright';
+import * as S from './Style';
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <div>
-      <h1>Footer</h1>
-    </div>
+    <S.Footer>
+      <Subs />
+      <Nav />
+      <Copyright />
+    </S.Footer>
   );
-}
+};
+
+export default Footer;
