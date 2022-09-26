@@ -66,6 +66,12 @@ export const Subs = styled.div`
     border: solid 6px #373737;
     cursor: pointer;
   }
+
+  @media (min-width: 770px) {
+    button {
+      width: 30%;
+    }
+  }
 `;
 
 export const Nav = styled.div`
@@ -96,6 +102,30 @@ export const Nav = styled.div`
   li:hover {
     background-color: #dfe4de;
   }
+
+  @media (min-width: 770px) {
+    nav {
+      margin: 10% 0 5%;
+    }
+  }
+  @media (min-width: 1000px) {
+    height: 35vh;
+    min-height: 330px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+      width: 600px;
+      margin: 10% 5%;
+    }
+    ul {
+      flex-direction: row;
+    }
+    li {
+      margin: 0;
+    }
+  }
 `;
 
 export const Icons = styled.div`
@@ -121,6 +151,30 @@ export const Icons = styled.div`
       width: 90%;
     }
   }
+
+  @media (min-width: 770px) {
+    nav {
+      margin: 10% 0 5%;
+    }
+  }
+  @media (min-width: 1000px) {
+    height: 35vh;
+    min-height: 330px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+      width: 600px;
+      margin: 10% 5%;
+    }
+    ul {
+      flex-direction: row;
+    }
+    li {
+      margin: 0;
+    }
+  }
 `;
 
 export const Copyrigth = styled.div`
@@ -135,5 +189,18 @@ export const Copyrigth = styled.div`
     width: 94%;
     font-size: 0.52rem;
     word-break: break-all;
+  }
+
+  @media (min-width: 770px) {
+    div {
+      font-size: 0.6rem;
+      text-align: center;
+    }
+  }
+  @media (min-width: 1000px) {
+    div {
+      font-size: 0.8vw;
+      text-align: center;
+    }
   }
 `;
