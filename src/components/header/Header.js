@@ -1,9 +1,10 @@
-import React from 'react';
+import React from 'react'
+import * as S from './Style'
 
-export default function Header() {
+const Header = () => {
   return (
-    <div>
-      <h1>Header</h1>
-    </div>
-  );
+    <div>Header</div>
+  )
 }
+
+export default Header

@@ -1,9 +1,10 @@
-import React from 'react';
+import React from 'react'
+import * as S from './Style'
 
-export default function Main() {
+const Main = () => {
   return (
-    <div>
-      <h1>Main</h1>
-    </div>
-  );
+    <div>Main</div>
+  )
 }
+
+export default Main
