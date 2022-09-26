@@ -57,7 +57,7 @@ export const Subs = styled.div`
   }
   button {
     width: 95%;
-    max-width: 420px;
+    max-width: 460px;
     height: 9vh;
     min-height: 80px;
     letter-spacing: 6px;
@@ -151,29 +151,15 @@ export const Icons = styled.div`
       width: 90%;
     }
   }
-
   @media (min-width: 770px) {
-    nav {
-      margin: 10% 0 5%;
-    }
+    margin-bottom: 10%;
   }
-  @media (min-width: 1000px) {
-    height: 35vh;
-    min-height: 330px;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
 
-    nav {
-      width: 600px;
-      margin: 10% 5%;
-    }
-    ul {
-      flex-direction: row;
-    }
-    li {
-      margin: 0;
-    }
+  @media (min-width: 1000px) {
+    width: 20%;
+    max-width: 300px;
+    margin-bottom: 0;
+    margin-left: 5%;
   }
 `;
 
