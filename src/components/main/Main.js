@@ -1,12 +1,13 @@
-import React from "react";
-import * as S from "./Style.js";
+import React from 'react';
+import About from './components/about/About';
+//import * as S from './Style'
 
 const Main = () => {
   return (
-    <S.Main>
-      <h1>Main</h1>
-    </S.Main>
-  );
+    <div>
+      <About/>
+    </div>
+  )
 }
 
-export default Main
+export default Main;
