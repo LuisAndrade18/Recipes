@@ -6,6 +6,20 @@ const Header = () => {
   return (
     <S.Header>
       <nav>
+        <S.MenuDesktop>
+          <div>
+            <S.Logo>RC</S.Logo>
+          </div>
+          <section>
+            <S.BoxDesktopList>
+              <S.MenuDesktopItem>ABOUT</S.MenuDesktopItem>
+              <S.MenuDesktopItem>RECIPES</S.MenuDesktopItem>
+              <S.MenuDesktopItem>
+                <S.SubscribesButton>SUBSCRIBES</S.SubscribesButton>
+              </S.MenuDesktopItem>
+            </S.BoxDesktopList>
+          </section>
+        </S.MenuDesktop>
         <S.BoxMenuHamburger>
           <S.MenuHamburger src={MenuIcon} alt="Menu hamburger" />
           <S.MenuMobileContent>
@@ -24,6 +38,6 @@ const Header = () => {
       </S.BoxTitle>
     </S.Header>
   );
-}
+};
 
-export default Header
+export default Header;
