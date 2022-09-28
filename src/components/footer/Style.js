@@ -145,8 +145,11 @@ export const Icons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  img {
+  figure{
     width: 20%;
+  }
+  img {
+    width: 100%;
   }
   img:hover {
     animation: click 0.3s forwards;
