@@ -10,15 +10,13 @@ const Header = () => {
           <div>
             <S.Logo>RC</S.Logo>
           </div>
-          <section>
-            <S.BoxDesktopList>
+          <S.BoxDesktopList>
+            <S.DesktopList>
               <S.MenuDesktopItem>ABOUT</S.MenuDesktopItem>
               <S.MenuDesktopItem>RECIPES</S.MenuDesktopItem>
-              <S.MenuDesktopItem>
-                <S.SubscribesButton>SUBSCRIBES</S.SubscribesButton>
-              </S.MenuDesktopItem>
-            </S.BoxDesktopList>
-          </section>
+            </S.DesktopList>
+            <S.SubscribesButton>SUBSCRIBES</S.SubscribesButton>
+          </S.BoxDesktopList>
         </S.MenuDesktop>
         <S.BoxMenuHamburger>
           <S.MenuHamburger src={MenuIcon} alt="Menu hamburger" />

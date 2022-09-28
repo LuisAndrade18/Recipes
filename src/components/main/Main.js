@@ -1,13 +1,15 @@
-import React from 'react';
-import About from './components/about/About';
-//import * as S from './Style'
+import React from "react";
+import LatestRecipes from "./components/latestRecipes/LatestRecipes";
+import About from './components/about/About'
+import * as S from "./Style.js";
 
 const Main = () => {
   return (
-    <div>
+    <S.Main>
+      <LatestRecipes />
       <About/>
-    </div>
-  )
+    </S.Main>
+  );
 }
 
-export default Main;
+export default Main

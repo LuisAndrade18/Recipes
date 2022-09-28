@@ -15,21 +15,25 @@ export const Header = styled.header`
 
 export const MenuDesktop = styled.section`
   padding: 2.8rem 3.3rem 0 3.9rem;
-  display: none;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 
-  @media (min-width: 1000px) {
-    display: flex;
+  @media (max-width: 1000px) {
+    display: none;
   }
 `;
 
 export const Logo = styled.h1`
   font-size: 2rem;
-  font-weight: 900;
+  font-family: "HURME GEOMETRIC S.B.";
 `;
 
-export const BoxDesktopList = styled.ul`
+export const BoxDesktopList = styled.div`
+  display: flex;
+`;
+
+export const DesktopList = styled.ul`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,20 +42,20 @@ export const BoxDesktopList = styled.ul`
 export const MenuDesktopItem = styled.li`
   margin-left: 5.5rem;
   letter-spacing: 0.1rem;
+`;
+export const Title = styled.h1`
+  font-size: 2.5rem;
+  letter-spacing: 0.9rem;
+  font-family: "HURME GEOMETRIC S.B.";
 
-  :not(:has(button)) {
-    :hover,
-    ::after {
-      display: inline-block;
-      content: " ";
-      font-weight: bold;
-      cursor: pointer;
-      border-bottom: 0.2rem solid #373737;
-    }
+  @media (min-width: 1024px) {
+    font-size: 6.5rem;
+    letter-spacing: 0.2rem;
   }
 `;
 
 export const SubscribesButton = styled.button`
+  margin-left: 5.5rem;
   padding: 0.5rem 3rem;
   font-family: "HURME GEOMETRIC";
   font-size: 1.2rem;
@@ -63,16 +67,6 @@ export const SubscribesButton = styled.button`
     cursor: pointer;
     color: #ffffff;
     background-color: #373737;
-  }
-`;
-
-export const Title = styled.h1`
-  font-size: 2.5rem;
-  letter-spacing: 0.9rem;
-
-  @media (min-width: 1024px) {
-    font-size: 6.5rem;
-    letter-spacing: 0.2rem;
   }
 `;
 

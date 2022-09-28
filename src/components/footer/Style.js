@@ -1,4 +1,10 @@
+import styled from 'styled-components';
 
+export const Footer = styled.footer`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 export const Subs = styled.div`
   width: 100%;
@@ -51,7 +57,7 @@ export const Subs = styled.div`
   }
   button {
     width: 95%;
-    max-width: 460px;
+    max-width: 420px;
     height: 9vh;
     min-height: 80px;
     letter-spacing: 6px;
@@ -90,11 +96,11 @@ export const Nav = styled.div`
     font-size: 1.5rem;
     margin: 15px;
     padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
   }
   li:hover {
+    cursor: pointer;
     background-color: #dfe4de;
+    border-radius: 5px;
   }
 
   @media (min-width: 770px) {
@@ -116,7 +122,7 @@ export const Nav = styled.div`
     ul {
       flex-direction: row;
     }
-    li {
+    li{
       margin: 0;
     }
   }
@@ -145,6 +151,7 @@ export const Icons = styled.div`
       width: 90%;
     }
   }
+
   @media (min-width: 770px) {
     margin-bottom: 10%;
   }
@@ -171,16 +178,9 @@ export const Copyrigth = styled.div`
     word-break: break-all;
   }
 
-  @media (min-width: 770px) {
-    div {
-      font-size: 0.6rem;
-      text-align: center;
-    }
-  }
-  @media (min-width: 1000px) {
-    div {
-      font-size: 0.8vw;
-      text-align: center;
-    }
+  @media (min-width: 770px){
+    font-size: 1.5rem;
+    text-align: center;
   }
 `;
+
