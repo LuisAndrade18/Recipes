@@ -42,7 +42,16 @@ export const DesktopList = styled.ul`
 export const MenuDesktopItem = styled.li`
   margin-left: 5.5rem;
   letter-spacing: 0.1rem;
+
+  :hover,
+  ::after {
+    display: inline-block;
+    content: " ";
+    cursor: pointer;
+    border-bottom: 0.2rem solid #373737;
+  }
 `;
+
 export const Title = styled.h1`
   font-size: 2.5rem;
   letter-spacing: 0.9rem;
