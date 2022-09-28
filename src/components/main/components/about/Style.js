@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const About = styled.div`
   width: 100%;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,9 +27,8 @@ export const About = styled.div`
       font-size: 2rem;
     }
     p {
-      width: 60%;
+      width: 63%;
       font-size: 1.1vw;
-      text-align: justify;
       max-width: none;
     }
   }

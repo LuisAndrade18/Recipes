@@ -28,9 +28,7 @@ const Icons = () => {
   return (
     <S.Icons>
       {IconsImg.map((item, index) => (
-        <figure key={index}>
-          <img src={item.icon} alt={item.alt} />
-        </figure>
+          <img key={index} src={item.icon} alt={item.alt} />
       ))}
     </S.Icons>
   );

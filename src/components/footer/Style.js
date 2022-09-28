@@ -36,8 +36,9 @@ export const Subs = styled.div`
     letter-spacing: 4.2px;
   }
   h4 {
+    margin: 15px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-family: 'HURME GEOMETRIC L.';
     letter-spacing: 2px;
   }
@@ -65,7 +66,8 @@ export const Subs = styled.div`
     background: none;
     border: solid 6px #373737;
     cursor: pointer;
-    font-family: 'HURME GEOMETRIC';
+    color: #373737;
+    font-family: 'HURME GEOMETRIC S.B.';
   }
 
   @media (min-width: 770px) {
@@ -82,7 +84,8 @@ export const Subs = styled.div`
 
 export const Nav = styled.div`
   width: 100%;
-  font-family: 'HURME GEOMETRIC L.';
+  background-color: #f2f4f1;
+  font-family: 'HURME GEOMETRIC';
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -116,13 +119,13 @@ export const Nav = styled.div`
   }
   @media (min-width: 1000px) {
     height: 35vh;
-    min-height: 330px;
+    min-height: 300px;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
 
     nav {
-      width: 600px;
+      width: 450px;
       margin: 10% 5%;
     }
     ul {
@@ -130,21 +133,20 @@ export const Nav = styled.div`
     }
     li {
       margin: 0;
+      font-size: 1.2rem;
     }
   }
 `;
 
 export const Icons = styled.div`
   width: 70%;
-  max-width: 400px;
+  max-width: 300px;
   margin-bottom: 30%;
   display: flex;
   justify-content: space-between;
-  figure {
-    width: 20%;
-  }
+  align-items: center;
   img {
-    width: 100%;
+    width: 20%;
   }
   img:hover {
     animation: click 0.3s forwards;
@@ -163,10 +165,9 @@ export const Icons = styled.div`
   }
 
   @media (min-width: 1000px) {
-    width: 20%;
-    max-width: 300px;
+    width: 17%;
     margin-bottom: 0;
-    margin-left: 5%;
+    margin-left: 3%;
   }
 `;
 
@@ -181,12 +182,13 @@ export const Copyrigth = styled.div`
   div {
     width: 94%;
     font-size: 0.52rem;
+    opacity: .5;
     word-break: break-all;
   }
 
   @media (min-width: 770px) {
     div {
-      font-size: 1vw;
+      font-size: .9vw;
       text-align: center;
     }
   }
