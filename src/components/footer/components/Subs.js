@@ -27,7 +27,7 @@ const Subs = () => {
         imageUrl: `${welcome}`,
         imageHeight: 200,
         showConfirmButton: false,
-        timer: 2000,
+        timer: 4000,
       });
       setEmail('');
     } else {

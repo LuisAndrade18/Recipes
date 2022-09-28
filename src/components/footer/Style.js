@@ -59,17 +59,23 @@ export const Subs = styled.div`
     width: 95%;
     max-width: 420px;
     height: 9vh;
-    min-height: 80px;
+    min-height: 60px;
     letter-spacing: 6px;
     font-size: 1.2rem;
     background: none;
     border: solid 6px #373737;
     cursor: pointer;
+    font-family: 'HURME GEOMETRIC';
   }
 
   @media (min-width: 770px) {
     button {
       width: 30%;
+    }
+  }
+  @media (min-width: 1000px) {
+    button {
+      height: 6vh;
     }
   }
 `;
@@ -122,7 +128,7 @@ export const Nav = styled.div`
     ul {
       flex-direction: row;
     }
-    li{
+    li {
       margin: 0;
     }
   }
@@ -178,9 +184,10 @@ export const Copyrigth = styled.div`
     word-break: break-all;
   }
 
-  @media (min-width: 770px){
-    font-size: 1.5rem;
-    text-align: center;
+  @media (min-width: 770px) {
+    div {
+      font-size: 1vw;
+      text-align: center;
+    }
   }
 `;
-
