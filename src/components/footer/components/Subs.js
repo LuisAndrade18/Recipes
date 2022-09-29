@@ -41,7 +41,7 @@ const Subs = () => {
     }
   };
   return (
-    <S.Subs>
+    <S.Subs id='Subs'>
       <div>
         <h2>SUBSCRIBE</h2>
         <h4>Sign up for newsletter</h4>

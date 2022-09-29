@@ -79,7 +79,7 @@ export const Title = styled.h1`
   }
 `;
 
-export const SubscribesButton = styled.button`
+export const SubscribesButton = styled.a`
   margin-left: 5.5rem;
   padding: 1rem 2rem;
   font-size: 1.1rem;

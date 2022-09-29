@@ -1,6 +1,6 @@
-import React from "react";
-import MenuIcon from "../../assets/icons/menuIcon.svg";
-import * as S from "./Style.js";
+import React from 'react';
+import MenuIcon from '../../assets/icons/menuIcon.svg';
+import * as S from './Style.js';
 
 const Header = () => {
   return (
@@ -12,10 +12,12 @@ const Header = () => {
           </div>
           <S.BoxDesktopList>
             <S.DesktopList>
-              <S.MenuDesktopItem>ABOUT</S.MenuDesktopItem>
+              <S.MenuDesktopItem>
+                <a href="#About">ABOUT</a>
+              </S.MenuDesktopItem>
               <S.MenuDesktopItem>RECIPES</S.MenuDesktopItem>
+              <S.SubscribesButton href="#Subs">SUBSCRIBES</S.SubscribesButton>
             </S.DesktopList>
-            <S.SubscribesButton>SUBSCRIBES</S.SubscribesButton>
           </S.BoxDesktopList>
         </S.MenuDesktop>
         <S.BoxMenuHamburger>
@@ -25,7 +27,7 @@ const Header = () => {
               <S.MenuMobileItem>ABOUT</S.MenuMobileItem>
               <S.MenuMobileItem>RECIPES</S.MenuMobileItem>
               <li>
-                <S.SubscribesButton>SUBSCRIBES</S.SubscribesButton>
+                <S.SubscribesButton href="#Subs">SUBSCRIBES</S.SubscribesButton>
               </li>
             </S.BoxMobileList>
           </S.MenuMobileContent>

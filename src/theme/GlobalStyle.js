@@ -3,17 +3,21 @@ import Hurme from '../assets/fonts/HurmeRegular.otf';
 import HurmeL from '../assets/fonts/HurmeLight.otf';
 import HurmeSB from '../assets/fonts/HurmeSemiBold.otf';
 
-export const GLobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
   }
-  
+  a{
+    color: #373737;
+  }
   body {   
     color: #373737;
+    
   }
 
   @font-face {

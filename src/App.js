@@ -7,7 +7,7 @@ import * as S from "./theme/GlobalStyle";
 function App() {
   return (
     <div>
-      <S.GLobalStyle />
+      <S.GlobalStyle />
       <Header />
       <Main />
       <Footer />
