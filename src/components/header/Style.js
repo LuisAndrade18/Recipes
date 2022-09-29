@@ -6,11 +6,11 @@ export const Header = styled.header`
   margin: 1rem 0.5rem 1rem;
   display: flex;
   flex-direction: column;
+  font-family: "HURME GEOMETRIC";
   background-image: url(${Background});
   background-size: cover;
   background-position: 80%;
   background-repeat: no-repeat;
-  font-family: "HURME GEOMETRIC";
 `;
 
 export const MenuDesktop = styled.section`
@@ -42,10 +42,11 @@ export const DesktopList = styled.ul`
 export const MenuDesktopItem = styled.li`
   margin-left: 5.5rem;
   letter-spacing: 0.1rem;
+  font-size: 1.2rem;
 
   :hover,
   ::after {
-    display: inline-block;
+    $display: inline-block;
     content: " ";
     cursor: pointer;
     border-bottom: 0.2rem solid #373737;
@@ -65,9 +66,9 @@ export const Title = styled.h1`
 
 export const SubscribesButton = styled.button`
   margin-left: 5.5rem;
-  padding: 0.5rem 3rem;
-  font-family: "HURME GEOMETRIC";
-  font-size: 1.2rem;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
   color: #373737;
   border: 4px solid #373737;
   background-color: transparent;

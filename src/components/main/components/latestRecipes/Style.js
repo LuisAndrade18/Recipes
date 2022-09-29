@@ -14,10 +14,11 @@ export const BoxRecipesTitle = styled.div`
 `;
 
 export const RecipesTitle = styled.h2`
+  margin-bottom: 1rem;
   font-size: 2rem;
   letter-spacing: 0.1rem;
   line-height: 3.1rem;
-  margin-bottom: 1rem;
+  font-family: "HURME GEOMETRIC S.B.";
 `;
 
 export const HorizontalLine = styled.span`
@@ -31,6 +32,7 @@ export const BoxCard = styled.div`
   @media (min-width: 1024px) {
     display: flex;
     flex-directon: column;
+    justify-content: center;
   }
 `;
 
