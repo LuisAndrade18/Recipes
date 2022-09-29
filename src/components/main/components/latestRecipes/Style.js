@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.section`
   text-align: center;
   padding: 1.5rem 1rem;
+  margin-bottom: 8rem;
 `;
 
 export const BoxRecipesTitle = styled.div`

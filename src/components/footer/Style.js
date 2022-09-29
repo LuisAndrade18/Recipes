@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Footer = styled.footer`
   display: flex;
@@ -8,10 +8,10 @@ export const Footer = styled.footer`
 
 export const Subs = styled.div`
   width: 100%;
-  height: 60vh;
+  height: 80vh;
   min-height: 400px;
   background-color: #dfe4de;
-  font-family: 'HURME GEOMETRIC';
+  font-family: "HURME GEOMETRIC";
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,14 +32,14 @@ export const Subs = styled.div`
   }
   h2 {
     font-size: 2rem;
-    font-family: 'HURME GEOMETRIC S.B.';
+    font-family: "HURME GEOMETRIC S.B.";
     letter-spacing: 4.2px;
   }
   h4 {
     margin: 15px;
     text-align: center;
     font-size: 1.6rem;
-    font-family: 'HURME GEOMETRIC L.';
+    font-family: "HURME GEOMETRIC L.";
     letter-spacing: 2px;
   }
   input {
@@ -53,7 +53,7 @@ export const Subs = styled.div`
   }
   input::placeholder {
     font-size: 18px;
-    font-family: 'HURME GEOMETRIC L.';
+    font-family: "HURME GEOMETRIC L.";
     color: #707070;
   }
   button {
@@ -67,7 +67,7 @@ export const Subs = styled.div`
     border: solid 6px #373737;
     cursor: pointer;
     color: #373737;
-    font-family: 'HURME GEOMETRIC S.B.';
+    font-family: "HURME GEOMETRIC S.B.";
   }
 
   @media (min-width: 770px) {
@@ -75,9 +75,17 @@ export const Subs = styled.div`
       width: 30%;
     }
   }
+
   @media (min-width: 1000px) {
     button {
       height: 6vh;
+      margin: 10px;
+
+      :hover {
+        cursor: pointer;
+        color: #ffffff;
+        background-color: #373737;
+      }
     }
   }
 `;
@@ -85,7 +93,7 @@ export const Subs = styled.div`
 export const Nav = styled.div`
   width: 100%;
   background-color: #f2f4f1;
-  font-family: 'HURME GEOMETRIC';
+  font-family: "HURME GEOMETRIC";
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -145,7 +153,7 @@ export const Icons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  figure{
+  figure {
     width: 20%;
   }
   img {
@@ -170,7 +178,7 @@ export const Icons = styled.div`
   @media (min-width: 1000px) {
     width: 17%;
     margin-bottom: 0;
-    margin-left: 3%;
+    margin-left: 5%;
   }
 `;
 
@@ -185,14 +193,18 @@ export const Copyrigth = styled.div`
   div {
     width: 94%;
     font-size: 0.52rem;
-    opacity: .5;
+    opacity: 0.5;
     word-break: break-all;
   }
 
   @media (min-width: 770px) {
     div {
-      font-size: .9vw;
+      font-size: 0.8vw;
       text-align: center;
+    }
+
+    p {
+      letter-spacing: 1.68px;
     }
   }
 `;

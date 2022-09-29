@@ -14,7 +14,7 @@ export const Header = styled.header`
 `;
 
 export const MenuDesktop = styled.section`
-  padding: 2.8rem 3.3rem 0 3.9rem;
+  padding: 2rem 3.3rem 0 3.3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,7 +25,7 @@ export const MenuDesktop = styled.section`
 `;
 
 export const Logo = styled.h1`
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-family: "HURME GEOMETRIC S.B.";
 `;
 
@@ -53,20 +53,35 @@ export const MenuDesktopItem = styled.li`
   }
 `;
 
+export const BoxTitle = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 49.6rem;
+
+  @media (min-width: 1000px) {
+    position: relative;
+  }
+`;
+
 export const Title = styled.h1`
   font-size: 2.5rem;
   letter-spacing: 0.9rem;
   font-family: "HURME GEOMETRIC S.B.";
 
   @media (min-width: 1024px) {
-    font-size: 6.5rem;
-    letter-spacing: 0.2rem;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 8.5vw;
+    letter-spacing: 0.9rem;
   }
 `;
 
 export const SubscribesButton = styled.button`
   margin-left: 5.5rem;
-  padding: 0.8rem 2rem;
+  padding: 1rem 2rem;
   font-size: 1.1rem;
   letter-spacing: 0.1rem;
   color: #373737;
@@ -114,11 +129,4 @@ export const BoxMobileList = styled.ul`
 
 export const MenuMobileItem = styled.li`
   margin-bottom: 2rem;
-`;
-
-export const BoxTitle = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 49.6rem;
 `;
