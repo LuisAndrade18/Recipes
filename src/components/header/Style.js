@@ -44,12 +44,28 @@ export const MenuDesktopItem = styled.li`
   letter-spacing: 0.1rem;
   font-size: 1.2rem;
 
-  :hover,
+  &:hover,
   ::after {
     $display: inline-block;
     content: " ";
     cursor: pointer;
     border-bottom: 0.2rem solid #373737;
+  }
+`;
+
+export const SubscribesButton = styled.a`
+  margin-left: 5.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  color: #373737;
+  border: 4px solid #373737;
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #373737;
   }
 `;
 
@@ -79,22 +95,6 @@ export const Title = styled.h1`
   }
 `;
 
-export const SubscribesButton = styled.a`
-  margin-left: 5.5rem;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  letter-spacing: 0.1rem;
-  color: #373737;
-  border: 4px solid #373737;
-  background-color: transparent;
-
-  :hover {
-    cursor: pointer;
-    color: #ffffff;
-    background-color: #373737;
-  }
-`;
-
 export const BoxMenuHamburger = styled.figure`
   width: 100%;
   display: flex;
@@ -112,11 +112,31 @@ export const MenuHamburger = styled.img`
 `;
 
 export const MenuMobileContent = styled.div`
-  display: none; /* só fica flex quando clicar no menu hamburguer */
+  display: flex;
   position: absolute;
+  ${"" /* top: 1rem; */}
+  z-index: 6; 
   padding: 2rem;
   width: calc(100vw - 16px);
+  backdrop-filter: blur(2px);
   background-color: #dfe4de;
+  opacity:   0;
+  pointer-events: none;
+
+  ${({ Active }) =>
+    Active &&
+    `
+      opacity: 1;
+      pointer-events: auto;
+    `}
+
+  @media(min-width: 1000px) {
+    display: none;
+  }
+`;
+
+export const CloseMenuMobile = styled.figure`
+  padding:1rem;
 `;
 
 export const BoxMobileList = styled.ul`
