@@ -1,8 +1,12 @@
-import React from 'react';
-import MenuIcon from '../../assets/icons/menuIcon.svg';
-import * as S from './Style.js';
+import React, { useState } from "react";
+import MenuIcon from "../../assets/icons/menuIcon.svg";
+import CloseMenuMobile from "../../assets/icons/closeMenuMobile.svg";
+import * as S from "./Style.js";
 
 const Header = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+  console.log(openMenu);
+
   return (
     <S.Header>
       <nav>
@@ -21,16 +25,29 @@ const Header = () => {
           </S.BoxDesktopList>
         </S.MenuDesktop>
         <S.BoxMenuHamburger>
-          <S.MenuHamburger src={MenuIcon} alt="Menu hamburger" />
-          <S.MenuMobileContent>
-            <S.BoxMobileList>
-              <S.MenuMobileItem>ABOUT</S.MenuMobileItem>
-              <S.MenuMobileItem>RECIPES</S.MenuMobileItem>
-              <li>
-                <S.SubscribesButton href="#Subs">SUBSCRIBES</S.SubscribesButton>
-              </li>
-            </S.BoxMobileList>
-          </S.MenuMobileContent>
+          <S.MenuHamburger
+            src={MenuIcon}
+            alt="Open hamburger"
+            onClick={() => setOpenMenu(true)}
+          />
+          {openMenu && (
+            <S.MenuMobileContent openMenu={openMenu}>
+              <S.CloseMenuMobile
+                src={CloseMenuMobile}
+                alt="Close menu"
+                onClick={() => setOpenMenu(false)}
+              />
+              <S.BoxMobileList>
+                <S.MenuMobileItem>ABOUT</S.MenuMobileItem>
+                <S.MenuMobileItem>RECIPES</S.MenuMobileItem>
+                <li>
+                  <S.SubscribesMobileButton href="#Subs">
+                    SUBSCRIBES
+                  </S.SubscribesMobileButton>
+                </li>
+              </S.BoxMobileList>
+            </S.MenuMobileContent>
+          )}
         </S.BoxMenuHamburger>
       </nav>
       <S.BoxTitle>

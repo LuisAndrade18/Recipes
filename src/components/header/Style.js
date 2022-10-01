@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import Background from "../../assets/images/background.png";
 
 export const Header = styled.header`
@@ -44,12 +44,28 @@ export const MenuDesktopItem = styled.li`
   letter-spacing: 0.1rem;
   font-size: 1.2rem;
 
-  :hover,
+  &:hover,
   ::after {
     $display: inline-block;
     content: " ";
     cursor: pointer;
     border-bottom: 0.2rem solid #373737;
+  }
+`;
+
+export const SubscribesButton = styled.a`
+  margin-left: 5.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  color: #373737;
+  border: 4px solid #373737;
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #373737;
   }
 `;
 
@@ -79,22 +95,6 @@ export const Title = styled.h1`
   }
 `;
 
-export const SubscribesButton = styled.a`
-  margin-left: 5.5rem;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  letter-spacing: 0.1rem;
-  color: #373737;
-  border: 4px solid #373737;
-  background-color: transparent;
-
-  :hover {
-    cursor: pointer;
-    color: #ffffff;
-    background-color: #373737;
-  }
-`;
-
 export const BoxMenuHamburger = styled.figure`
   width: 100%;
   display: flex;
@@ -112,21 +112,48 @@ export const MenuHamburger = styled.img`
 `;
 
 export const MenuMobileContent = styled.div`
-  display: none; /* só fica flex quando clicar no menu hamburguer */
+  display: flex;
   position: absolute;
   padding: 2rem;
   width: calc(100vw - 16px);
+  backdrop-filter: blur(2px);
   background-color: #dfe4de;
+  opacity: 0;
+  pointer-events: none;
+
+  ${({ openMenu }) =>
+    openMenu &&
+    `
+      opacity: 1;
+      pointer-events: auto;
+    `}
+
+  @media(min-width: 1000px) {
+    display: none;
+  }
+`;
+
+export const CloseMenuMobile = styled.img`
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2rem;
 `;
 
 export const BoxMobileList = styled.ul`
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   font-size: 1.5rem;
   font-weight: 700;
 `;
 
 export const MenuMobileItem = styled.li`
   margin-bottom: 2rem;
+`;
+
+export const SubscribesMobileButton = styled(SubscribesButton)`
+  padding: 0.8rem 1rem;
+  margin-left: 0;
+  border-width: 3px;
 `;
