@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import Background from "../../assets/images/background.png";
 
 export const Header = styled.header`
@@ -114,17 +114,15 @@ export const MenuHamburger = styled.img`
 export const MenuMobileContent = styled.div`
   display: flex;
   position: absolute;
-  ${"" /* top: 1rem; */}
-  z-index: 6; 
   padding: 2rem;
   width: calc(100vw - 16px);
   backdrop-filter: blur(2px);
   background-color: #dfe4de;
-  opacity:   0;
+  opacity: 0;
   pointer-events: none;
 
-  ${({ Active }) =>
-    Active &&
+  ${({ openMenu }) =>
+    openMenu &&
     `
       opacity: 1;
       pointer-events: auto;
@@ -135,18 +133,27 @@ export const MenuMobileContent = styled.div`
   }
 `;
 
-export const CloseMenuMobile = styled.figure`
-  padding:1rem;
+export const CloseMenuMobile = styled.img`
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2rem;
 `;
 
 export const BoxMobileList = styled.ul`
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   font-size: 1.5rem;
   font-weight: 700;
 `;
 
 export const MenuMobileItem = styled.li`
   margin-bottom: 2rem;
+`;
+
+export const SubscribesMobileButton = styled(SubscribesButton)`
+  padding: 0.8rem 1rem;
+  margin-left: 0;
+  border-width: 3px;
 `;
