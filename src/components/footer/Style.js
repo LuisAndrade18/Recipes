@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 export const Footer = styled.footer`
   display: flex;
@@ -50,6 +50,8 @@ export const Subs = styled.div`
     border: none;
     margin: 16px;
     background-color: #eff1ee;
+    font-size: 1.2rem;
+    font-family: "HURME GEOMETRIC L.";
   }
   input::placeholder {
     font-size: 18px;

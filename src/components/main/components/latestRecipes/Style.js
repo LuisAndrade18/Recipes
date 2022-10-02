@@ -20,6 +20,7 @@ export const RecipesTitle = styled.h2`
   letter-spacing: 0.1rem;
   line-height: 3.1rem;
   font-family: "HURME GEOMETRIC S.B.";
+  white-space: nowrap;
 `;
 
 export const HorizontalLine = styled.span`

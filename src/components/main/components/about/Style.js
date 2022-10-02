@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 export const About = styled.div`
   width: 100%;
@@ -51,7 +51,8 @@ export const Image = styled.figure`
 
 export const Text = styled.div`
   height: 100vh;
-  max-height: 700px;
+  margin-top: 20px;
+  max-height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
